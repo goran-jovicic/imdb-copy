@@ -19,6 +19,10 @@ class MoviesController extends Controller
     {
         $movie = Movie::with('comments')->FindOrFail($id);
 
+        // $lastFiveMovies = Movie::latest()->limit(5);
+
+        // SELECT * FROM `movies` order by created_at desc limit 5;
+
         return view('movies.show', compact('movie'));
     }
 
