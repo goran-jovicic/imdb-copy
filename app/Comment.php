@@ -10,5 +10,12 @@ class Comment extends Model
     {
     return $this->belongsTo(Movie::class);
     }
-    
+
+    protected $fillable = [
+        'content'
+    ];
+
+    const STORE_RULES = [
+        'content' => 'required' 
+    ];
 }
