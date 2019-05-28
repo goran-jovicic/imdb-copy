@@ -23,3 +23,4 @@ Route::get('/movies/{id}', ['as' => 'single-movie', 'uses' => 'MoviesController@
 
 Route::post('/movies', ['as' => 'store-movie', 'uses' => 'MoviesController@store']);
 
+// Route::post('/posts/{postId}/comments', ['as' => 'comments-post', 'uses' => 'CommentsController@store']);

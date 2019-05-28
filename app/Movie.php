@@ -17,4 +17,9 @@ class Movie extends Model
         'production_date' => 'required',
         'storyline' => 'required | max:1000'
     ];
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }
