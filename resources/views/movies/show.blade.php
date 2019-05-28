@@ -4,7 +4,7 @@
 
 @section('content')
     <h1> {{$movie->title}}</h1>
-    <a href=""><p> {{$movie->genre}}</p></a>
+    <a href="/genres/{{$movie->genre}}"><p> {{$movie->genre}}</p></a>
     <p> {{$movie->production_date}}</p>
     <p> {{$movie->storyline}}</p>
     @if(count($movie->comments))
